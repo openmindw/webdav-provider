@@ -1,0 +1,19 @@
+{
+  "name": "Android Development",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "redhat.java",
+        "naco-siren.gradle-language",
+        "ms-vscode.gradle"
+      ]
+    }
+  },
+  "forwardPorts": [8080],
+  "postCreateCommand": "sdkmanager --licenses && sdkmanager --update",
+  "remoteUser": "vscode"
+}
